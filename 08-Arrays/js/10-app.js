@@ -13,6 +13,13 @@ const carrito = [
 
 ]
 
-carrito.map( function(producto) {
+const nuevoArray1 = carrito.forEach( function(producto) {
     console.log(`${producto.nombre} - Precio: ${producto.precio}`);
 } )
+
+const nuevoArray2 = carrito.map( function(producto) {
+    console.log(`${producto.nombre} - Precio: ${producto.precio}`);
+} )
+
+console.log(nuevoArray1);
+console.log(nuevoArray2);
